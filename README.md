@@ -1,6 +1,6 @@
-# 📜 Projeto: Raspberry Pi como Thin Client RDP com Redirecionamento de Webcam via USB/IP  
+# 🌐 Projeto: Raspberry Pi como Thin Client RDP com Redirecionamento de Webcam via USB/IP  
 
-## 📌 Visão Geral  
+## Visão Geral  
 Este projeto transforma um **Raspberry Pi** com **Raspberry Pi OS** em um **Thin Client RDP** (Remote Desktop Protocol).  
 Além de acessar a sessão remota em uma **VM Windows**, foi configurado o **USB/IP** para permitir o **redirecionamento de dispositivos USB**, como webcams, do Raspberry para a máquina virtual.  
 
@@ -13,7 +13,8 @@ Isso possibilita usar a webcam conectada no Raspberry diretamente dentro da sess
 - Foi utilziado o raspberry Pi 3 (funciona em modelos superiores também e é até recomendado, pois terá mais performance).  
 - Raspberry Pi OS atualizado.  
 - Acesso root/`sudo` no Raspberry.  
-- VM Windows (pode ser Hyper-V, VMware, VirtualBox, Proxmox, etc.).  
+- VM Windows (pode ser Hyper-V, VMware, VirtualBox, Proxmox, etc.). 
+- Ter o IP da VM Windows e Rasp. 
 - Conexão de rede estável.  
 
 ---
@@ -93,7 +94,7 @@ usbip attach -r IP_DO_RASPBERRY -b 1-1.2
 
 ---
 
-## 🚀 Resultado  
+## Resultado  
 
 - Raspberry Pi funcionando como **cliente RDP**.  
 - Webcam conectada no Raspberry é usada pela **VM Windows** via **USB/IP**.  
