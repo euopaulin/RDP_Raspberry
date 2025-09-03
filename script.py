@@ -24,8 +24,8 @@ def configurar_pacotes_usbip():
         
         print("Pacotes necessarios para o USBIP instalados corretamente.")
         return True
-    except subprocess.CalledProcessError as e:
-        print(f"Erro ao instalar pacotes: {e}")
+    except subprocess.CalledProcessError as erro1:
+        print(f"Erro ao instalar pacotes: {erro1}")
         return False
     
 def instalar_usbip():
@@ -40,8 +40,8 @@ def instalar_usbip():
     try:
         subprocess.run(['sudo', 'update-alternatives', '--install', '/usr/local/bin/usbip', 'usbip', usbip_path, '20'], check=True)
         print("Caminho alternativo para usbip criado com sucesso.")
-    except subprocess.CalledProcessError as e:
-        print(f"Erro ao criar caminho alternativo para usbip: {e}")
+    except subprocess.CalledProcessError as erro2:
+        print(f"Erro ao criar caminho alternativo para usbip: {erro2}")
 
     
 if __name__ == "__main__":
