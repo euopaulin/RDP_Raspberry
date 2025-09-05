@@ -1,6 +1,5 @@
 #Script para automatizar a configuração da VM para RDP
 
-
 #Instalação do usbipd-win
 function instalar_driver {
     param (
